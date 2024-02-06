@@ -44,7 +44,7 @@ with your MongoDB connection string.
 
 If you need to create a MongoDB Atlas deployment, see the
 [Create a MongoDB Deployment](https://www.mongodb.com/docs/drivers/php/laravel-mongodb/current/quick-start/create-a-deployment)
-step of the Quick STart.
+step of the Quick Start.
 
 If you already have a MongoDB Atlas deployment, see the
 [Create a Connection String](https://www.mongodb.com/docs/drivers/php/laravel-mongodb/current/quick-start/create-a-connection-string)
