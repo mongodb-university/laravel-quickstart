@@ -37,6 +37,15 @@ If you need to run a local MongoDB deployment, you can download
 To learn how to load sample data in a local deployment, see
 [Migrate Data with Self-Managed Tools](https://www.mongodb.com/docs/atlas/migration-self-managed/).
 
+
+### Install the Dependencies
+
+Run the following ``composer`` command to update your dependencies:
+
+```
+composer update
+```
+
 ### Configure your MongoDB Credentials
 
 In the ``config/database.php`` file, replace the ``<connection string>`` placeholder
