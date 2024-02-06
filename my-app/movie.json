@@ -1,0 +1,10 @@
+{
+  "title": "The Laravel MongoDB Quick Start",
+  "year": 2024,
+  "runtime": 15,
+  "imdb": {
+    "rating": 9.5,
+    "votes": 1
+  },
+  "plot": "This movie entry was created by running through the Laravel MongoDB Quick Start tutorial."
+}
