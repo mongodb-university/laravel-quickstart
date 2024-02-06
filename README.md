@@ -24,8 +24,8 @@ You need the following software installed in your development environment:
 
 - [PHP](https://www.php.net/downloads)
 - [Composer](https://getcomposer.org/doc/00-intro.md)
-- PHP Extension
-- Laravel
+- [MongoDB PHP Extension and Library](https://www.mongodb.com/docs/php-library/current/tutorial/install-php-library/)
+- [Laravel](https://laravel.com/docs/10.x/installation#creating-a-laravel-project)
 
 To see data in the example view, you need to have a MongoDB deployment
 with the "Mflix" Atlas sample datasets loaded. To learn how to load this
