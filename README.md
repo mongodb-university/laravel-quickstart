@@ -46,6 +46,15 @@ Run the following ``composer`` command to update your dependencies:
 composer update
 ```
 
+### Make a Copy of the Example Environment File
+
+Run the following command to use the example environment file
+in your sample app:
+
+```
+cp .env.example .env
+```
+
 ### Generate an App Key
 
 Run the following command to generate a Laravel application key:
