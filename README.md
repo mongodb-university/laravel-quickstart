@@ -25,7 +25,7 @@ You need the following software installed in your development environment:
 - [PHP](https://www.php.net/downloads)
 - [Composer](https://getcomposer.org/doc/00-intro.md)
 - [MongoDB PHP Extension and Library](https://www.mongodb.com/docs/php-library/current/tutorial/install-php-library/)
-- [Laravel](https://laravel.com/docs/10.x/installation#creating-a-laravel-project)
+- [Laravel](https://laravel.com/docs/11.x/installation#creating-a-laravel-project)
 
 To see data in the example view, you need to have a MongoDB deployment
 with the "Mflix" Atlas sample datasets loaded. To learn how to load this
@@ -44,23 +44,6 @@ Run the following ``composer`` command to update your dependencies:
 
 ```
 composer update
-```
-
-### Make a Copy of the Example Environment File
-
-Run the following command to use the example environment file
-in your sample app:
-
-```
-cp .env.example .env
-```
-
-### Generate an App Key
-
-Run the following command to generate a Laravel application key:
-
-```
-php artisan key:generate
 ```
 
 ### Configure your MongoDB Credentials
