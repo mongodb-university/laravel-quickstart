@@ -55,12 +55,13 @@ in your sample app:
 cp .env.example .env
 ```
 
-### Generate an App Key
+### Run the post-install Composer Script
 
-Run the following command to generate a Laravel application key:
+Run the following command to generate a Laravel application key and create
+a default sqllite database file:
 
 ```
-php artisan key:generate
+composer run-script post-install-cmd
 ```
 
 ### Configure your MongoDB Credentials
