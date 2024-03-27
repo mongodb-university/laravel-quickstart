@@ -55,14 +55,6 @@ in your sample app:
 cp .env.example .env
 ```
 
-### Generate an App Key
-
-Run the following command to generate a Laravel application key:
-
-```
-php artisan key:generate
-```
-
 ### Configure your MongoDB Credentials
 
 In the ``config/database.php`` file, replace the ``<connection string>`` placeholder
