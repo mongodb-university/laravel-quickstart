@@ -40,12 +40,12 @@ To learn how to load sample data in a local deployment, see
 
 ### Navigate to the App Directory Root
 
-Run the following command to navigate to the application directory root directory:
+Run the following command to navigate to the application directory root directory
+in the GitHub repository:
 
 ```
-cd my-app
+cd laravel-quickstart/my-app
 ```
-
 
 ### Install the Dependencies
 
@@ -53,6 +53,14 @@ Run the following ``composer`` command to install the dependencies:
 
 ```
 composer install
+```
+
+### Generate an App Key
+
+Run the following command to generate a Laravel application key:
+
+```
+php artisan key:generate
 ```
 
 ### Make a Copy of the Example Environment File
@@ -64,19 +72,15 @@ in your sample app:
 cp .env.example .env
 ```
 
-### Run the post-install Composer Script
-
-Run the following command to generate a Laravel application key and create
-a default sqllite database file:
-
-```
-composer run-script post-create-project-cmd
-```
-
 ### Configure your MongoDB Credentials
 
-In the ``config/database.php`` file, replace the ``<connection string>`` placeholder
-with your MongoDB connection string.
+In your ``.env`` file, set or update the following variables, replacing the
+``<connection string>`` placeholder with your MongoDB connection string:
+
+```
+DB_CONNECTION=mongodb
+DB_URI=<connection string>
+```
 
 If you need to create a MongoDB Atlas deployment, see the
 [Create a MongoDB Deployment](https://www.mongodb.com/docs/drivers/php/laravel-mongodb/current/quick-start/create-a-deployment)
