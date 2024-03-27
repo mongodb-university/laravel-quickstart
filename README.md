@@ -38,12 +38,21 @@ To learn how to load sample data in a local deployment, see
 [Migrate Data with Self-Managed Tools](https://www.mongodb.com/docs/atlas/migration-self-managed/).
 
 
-### Install the Dependencies
+### Navigate to the App Directory Root
 
-Run the following ``composer`` command to update your dependencies:
+Run the following command to navigate to the application directory root directory:
 
 ```
-composer update
+cd my-app
+```
+
+
+### Install the Dependencies
+
+Run the following ``composer`` command to install the dependencies:
+
+```
+composer install
 ```
 
 ### Make a Copy of the Example Environment File
