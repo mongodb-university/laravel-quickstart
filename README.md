@@ -61,7 +61,7 @@ Run the following command to generate a Laravel application key and create
 a default sqllite database file:
 
 ```
-composer run-script post-install-cmd
+composer run-script post-create-project-cmd
 ```
 
 ### Configure your MongoDB Credentials
