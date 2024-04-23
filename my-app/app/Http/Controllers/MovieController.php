@@ -37,16 +37,15 @@ class MovieController extends Controller
     /**
      * Display the specified resource.
      */
-
-    public function show()
+    public function show(Movie $movie)
     {
-      return view('browse_movies', [
-        'movies' => Movie::where('runtime', '<', 60)
-           ->where('imdb.rating', '>', 8.5)
-           ->orderBy('imdb.rating', 'desc')
-           ->take(10)
-           ->get()
-      ]);
+        return view('browse_movies', [
+            'movies' => Movie::where('runtime', '<', 60)
+                ->where('imdb.rating', '>', 8.5)
+                ->orderBy('imdb.rating', 'desc')
+                ->take(10)
+                ->get()
+        ]);
     }
 
     /**
