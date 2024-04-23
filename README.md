@@ -38,12 +38,21 @@ To learn how to load sample data in a local deployment, see
 [Migrate Data with Self-Managed Tools](https://www.mongodb.com/docs/atlas/migration-self-managed/).
 
 
-### Install the Dependencies
+### Navigate to the App Directory Root
 
-Run the following ``composer`` command to update your dependencies:
+Run the following command to navigate to the application directory root directory
+in the GitHub repository:
 
 ```
-composer update
+cd laravel-quickstart/my-app
+```
+
+### Install the Dependencies
+
+Run the following ``composer`` command to install the dependencies:
+
+```
+composer install
 ```
 
 ### Generate an App Key
@@ -70,6 +79,15 @@ variable to ``mongodb`` as shown in the following example:
 
 ```
 DB_CONNECTION=mongodb
+```
+
+### Make a Copy of the Example Environment File
+
+Run the following command to use the example environment file
+in your sample app:
+
+```
+cp .env.example .env
 ```
 
 ### Configure your MongoDB Credentials
