@@ -72,14 +72,35 @@ in your sample app:
 cp .env.example .env
 ```
 
-### Configure your MongoDB Credentials
+### Set the Default Connection Environment Variable
 
-In your ``.env`` file, set or update the following variables, replacing the
-``<connection string>`` placeholder with your MongoDB connection string:
+Open the ``.env`` file in an editor and set the value of the ``DB_CONNECTION``
+variable to ``mongodb`` as shown in the following example:
 
 ```
 DB_CONNECTION=mongodb
-DB_URI=<connection string>
+```
+
+### Make a Copy of the Example Environment File
+
+Run the following command to use the example environment file
+in your sample app:
+
+```
+cp .env.example .env
+```
+
+### Configure your MongoDB Credentials
+
+In the ``.env`` file, replace the value of the ``DB_URI`` variable with your
+MongoDB connection string.
+
+For example, if your connection string is
+"mongodb+srv://myUser:myPass123@mongo0.example.com/",
+your ``DB_URI`` variable matches the following line:
+
+```
+DB_URI="mongodb+srv://myUser:myPass123@mongo0.example.com/"
 ```
 
 If you need to create a MongoDB Atlas deployment, see the
@@ -89,6 +110,9 @@ step of the Quick Start.
 If you already have a MongoDB Atlas deployment, see the
 [Create a Connection String](https://www.mongodb.com/docs/drivers/php/laravel-mongodb/current/quick-start/create-a-connection-string)
 step of the Quick Start.
+
+> [!NOTE]
+> Make sure these variables in your ``.env`` file are undefined in the shell in which you run your application. Environment variables in the shell take precedence over the ones in the ``.env`` file.
 
 ### Start the PHP Built-in Webserver
 

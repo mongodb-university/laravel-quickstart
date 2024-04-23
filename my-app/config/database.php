@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mongodb'),
+    'default' => env('DB_CONNECTION'),
 
     /*
     |--------------------------------------------------------------------------
@@ -32,7 +32,7 @@ return [
     'connections' => [
         'mongodb' => [
           'driver' => 'mongodb',
-          'dsn' => env('DB_URI', '<connection string>'),
+          'dsn' => env('DB_URI'),
           'database' => 'sample_mflix',
         ],
 
